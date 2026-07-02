@@ -1,0 +1,6 @@
+.tasks-group-heading {
+  margin-top: 0.4em;
+  padding-top: 0.2em;
+  border-top: 1px solid var(--background-modifier-border);
+  font-weight: 600;
+}
