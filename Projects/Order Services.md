@@ -63,3 +63,15 @@ path includes Order Service
 - [x] Hỏi lại luồng khi user tạo đơn -> duyệt -> nhỡ user hủy đơn thì sao , 🔼 📅 2026-07-06 ✅ 2026-07-06
 
 
+## 🔥 Chưa xong
+```dataview
+TASK
+WHERE !completed AND file.path = this.file.path
+```
+
+## ✅ Đã xong
+```dataview
+TASK
+WHERE completed AND file.path = this.file.path
+SORT completion DESC
+```
