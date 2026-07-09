@@ -66,7 +66,7 @@ path includes Order Service
 	- [x] Tích hợp thông báo telegram / ⏫ 📅 2026-07-06 ✅ 2026-07-07
 	- [x] Sửa lại API web hook cho a Trường đồng nhất message lỗi / 📅 2026-07-07 ✅ 2026-07-07
 	- [x] Sửa lại phần đặt lịch luồng khi đặt lịch mà lại thêm giỏ hàng là sai / ⏫ 📅 2026-07-07 ✅ 2026-07-07
-	- [ ] Fix bug lỗi item ở giỏ hàng bị nhảy index khi add item không thành công /📅 2026-07-07 🔼 
+	- [ ] Fix bug lỗi item ở giỏ hàng bị nhảy index khi add item không thành công / 🔼 📅 2026-07-07
 	- [ ] API wehook trả cho a Trường 2 field orderNo để lưu và QR khi thanh toán /📅 2026-07-09 🔼 
 	- [ ] Sửa lại màn hình đặt lịch theo UI Mến sửa 📅 2026-07-09 🔼 
 
