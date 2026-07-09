@@ -58,10 +58,6 @@ not done
 path includes Order Service
 ```
 
-TABLE status, due, priority
-FROM "Order Services"
-WHERE !contains(file.tasks.completed, true)
-SORT due ASC
 
 ##  ✅ Question
 - [x] Hỏi lại luồng khi user tạo đơn -> duyệt -> nhỡ user hủy đơn thì sao , 🔼 📅 2026-07-06 ✅ 2026-07-06
