@@ -42,15 +42,6 @@ if (p.due_date) {
 }
 ```
 
-## ✅ Tasks
-- [x] Rà soát hệ thống và kiểm tra thông luồng với các service khác #doing 📅 2026-07-01 ✅ 2026-07-06
-- [x] Bàn giao hệ thống cho C Duyên test / ⏫ 📅 2026-07-06 ✅ 2026-07-06
-	- [x] Setup data test 📅 2026-07-06 ✅ 2026-07-06
-	- [x] Tích hợp thông báo telegram / ⏫ 📅 2026-07-06 ✅ 2026-07-07
-	- [x] Sửa lại API web hook cho a Trường đồng nhất message lỗi / 📅 2026-07-07 ✅ 2026-07-07
-	- [x] Sửa lại phần đặt lịch luồng khi đặt lịch mà lại thêm giỏ hàng là sai / ⏫ 📅 2026-07-07 ✅ 2026-07-07
-	- [ ] Fix bug lỗi item ở giỏ hàng bị nhảy index khi add item không thành công /📅 2026-07-07 🔼 
-	- [ ] API wehook trả cho a Trường 2 field orderNo để lưu và QR khi thanh toán /📅 2026-07-09 🔼 
 
 
 ```tasks
@@ -62,67 +53,14 @@ path includes Order Service
 ##  ✅ Question
 - [x] Hỏi lại luồng khi user tạo đơn -> duyệt -> nhỡ user hủy đơn thì sao , 🔼 📅 2026-07-06 ✅ 2026-07-06
 
+----------------------------------------------------------------------
 
-## 🔥 Chưa xong
-```dataview
-TASK
-WHERE !completed AND file.path = this.file.path
-```
-
-## ✅ Đã xong
-```dataview
-TASK
-WHERE completed AND file.path = this.file.path
-SORT completion DESC
-```
-
-## 📊 Trạng thái
-
-```dataviewjs
-const p = dv.current();
-const top = p.file.tasks.where(t => !t.parent);
-const done = top.where(t => t.completed).length;
-const total = top.length;
-const pct = total ? Math.round(done / total * 100) : 0;
-const bar = "█".repeat(Math.round(pct/10)) + "░".repeat(10 - Math.round(pct/10));
-
-dv.paragraph(`**Status:** ${p.status ?? "?"} · **Health:** ${p.health ?? "?"} · **Priority:** ${p.priority ?? "?"}`);
-dv.paragraph(`**Tiến độ:** ${bar} ${pct}% (${done}/${total})`);
-
-if (p.due_date) {
-  const d = dv.date(p.due_date);
-  const left = Math.ceil((d - dv.date("today")) / 86400000);
-  let flag, txt;
-  if (left < 0)        { flag = "🔴 QUÁ HẠN"; txt = `quá ${Math.abs(left)} ngày`; }
-  else if (left === 0) { flag = "🟡 HÔM NAY"; txt = "hết hạn hôm nay"; }
-  else if (left <= 2)  { flag = "🟡 GẤP";     txt = `còn ${left} ngày`; }
-  else                 { flag = "🟢";         txt = `còn ${left} ngày`; }
-  dv.paragraph(`⏳ ${flag} — ${txt} (deadline ${d.toFormat("dd/MM/yyyy")})`);
-}
-```
-
-## 🔥 Chưa xong
-
-```dataview
-TASK
-WHERE !completed AND file.path = this.file.path
-```
-
-## ✅ Xong gần đây
-
-```dataview
-TASK
-WHERE completed AND file.path = this.file.path
-SORT completion DESC
-LIMIT 5
-```
-
-## 📝 Ghi chú / Spec
-
----
-
-## 🗂️ Vùng gõ task (fold lại, không cần nhìn)
-
-<!-- Gõ TẤT CẢ task ở đây. Xong thì tick, cứ để nguyên - query trên tự lọc. - [ ] Việc cha 🔼 📅 2026-07-10 - [ ] Subtask (thụt lề 1 tab) -->
-
-- [ ]
+## ✅ Tasks
+- [x] Rà soát hệ thống và kiểm tra thông luồng với các service khác #doing 📅 2026-07-01 ✅ 2026-07-06
+- [x] Bàn giao hệ thống cho C Duyên test / ⏫ 📅 2026-07-06 ✅ 2026-07-06
+	- [x] Setup data test 📅 2026-07-06 ✅ 2026-07-06
+	- [x] Tích hợp thông báo telegram / ⏫ 📅 2026-07-06 ✅ 2026-07-07
+	- [x] Sửa lại API web hook cho a Trường đồng nhất message lỗi / 📅 2026-07-07 ✅ 2026-07-07
+	- [x] Sửa lại phần đặt lịch luồng khi đặt lịch mà lại thêm giỏ hàng là sai / ⏫ 📅 2026-07-07 ✅ 2026-07-07
+	- [ ] Fix bug lỗi item ở giỏ hàng bị nhảy index khi add item không thành công /📅 2026-07-07 🔼 
+	- [ ] API wehook trả cho a Trường 2 field orderNo để lưu và QR khi thanh toán /📅 2026-07-09 🔼 
