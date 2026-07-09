@@ -9,6 +9,8 @@ due_date: 2026-07-02
 tags:
   - project
 ---
+------------------------------------------------------------------------
+## TÀI LIỆU
 
 - prototype: https://app.visily.ai/projects/80375a3c-8a9a-4f85-accc-ae5f0b41c330/boards/2649806
 - link deploy
@@ -50,7 +52,7 @@ if (p.due_date) {
 not done
 path includes Order Service
 ```
-
+------------------------------------------------------------------------
 
 ##  ✅ Question
 - [x] Hỏi lại luồng khi user tạo đơn -> duyệt -> nhỡ user hủy đơn thì sao , 🔼 📅 2026-07-06 ✅ 2026-07-06
