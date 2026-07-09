@@ -42,21 +42,6 @@ if (p.due_date) {
 }
 ```
 
-## 📅 Gantt / Milestone
-```mermaid
-gantt
-    title Dự án
-    dateFormat YYYY-MM-DD
-    axisFormat %d/%m
-    todayMarker on
-
-    section Phát triển
-    Rà soát hệ thống       :done, 2026-07-01, 5d
-    Bàn giao C Duyên test  :milestone, done, 2026-07-06, 0d
-    Fix bug giỏ hàng       :active, 2026-07-07, 1d
-    API webhook QR         :2026-07-09, 1d
-```
-
 ## ✅ Tasks
 - [x] Rà soát hệ thống và kiểm tra thông luồng với các service khác #doing 📅 2026-07-01 ✅ 2026-07-06
 - [x] Bàn giao hệ thống cho C Duyên test / ⏫ 📅 2026-07-06 ✅ 2026-07-06
