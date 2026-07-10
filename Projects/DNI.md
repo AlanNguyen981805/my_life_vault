@@ -31,5 +31,5 @@ if (p.due_date) {
 ```
 
 ## ✅ Tasks
-- [ ] Họp báo cáo tiến độ 📅 2026-07-02 ⏫ 🔁 every week 
+- [x] Họp báo cáo tiến độ ⏫ 🔁 every week 📅 2026-07-02 ✅ 2026-07-10
 - [ ] Fix 6 bugs #doing ⏫ 🛫 2026-07-01 📅 2026-07-01
