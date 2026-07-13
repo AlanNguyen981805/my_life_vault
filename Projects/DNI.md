@@ -35,3 +35,4 @@ if (p.due_date) {
 - [ ] Lỗi: fill thông tin VN title/ EN title sau đó fill các thông tin khác => Save => Mất dữ liệu VN title/ EN title 📅 2026-07-13 🔼 
 - [ ] Lỗi:Doc-out gắn với case, PIC check lỗi => Cancel => Doc-out đó vẫn hiển thị trong case mà không bị xóa 📅 2026-07-13 ⏫ 
 - [ ] Hỏi Hiếu phần đổi PIC trong case đang thay đổi luôn trong inquiry, bug dòng 221 📅 2026-07-14 /⏫  
+- [ ] Báo các chị test bug dòng 233,  📅 2026-07-14 
