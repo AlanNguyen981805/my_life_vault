@@ -33,3 +33,4 @@ if (p.due_date) {
 ## ✅ Tasks
 - [x] Họp báo cáo tiến độ ⏫ 🔁 every week 📅 2026-07-02 ✅ 2026-07-10
 - [ ] Lỗi: fill thông tin VN title/ EN title sau đó fill các thông tin khác => Save => Mất dữ liệu VN title/ EN title 📅 2026-07-13 🔼 
+- [ ] Lỗi:Doc-out gắn với case, PIC check lỗi => Cancel => Doc-out đó vẫn hiển thị trong case mà không bị xóa 📅 2026-07-13 ⏫ 
