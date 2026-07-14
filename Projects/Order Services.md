@@ -72,6 +72,7 @@ path includes Order Service
 	- [x] Fix bug lỗi item ở giỏ hàng bị nhảy index khi add item không thành công / 🔼 📅 2026-07-07 ✅ 2026-07-11
 	- [x] API wehook trả cho a Trường 2 field orderNo để lưu và QR khi thanh toán / 🔼 📅 2026-07-09 ✅ 2026-07-10
 	- [x] Sửa lại màn hình đặt lịch theo UI Mến sửa 🔼 📅 2026-07-09 ✅ 2026-07-14
-- [ ] 
+- [ ] Phân chia outlet theo telegram📅 2026-07-14 ⏫ 
+- [ ] Sửa lại action đồng bộ POS  trong tele
 
 
