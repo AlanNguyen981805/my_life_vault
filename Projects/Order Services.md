@@ -74,5 +74,7 @@ path includes Order Service
 	- [x] Sửa lại màn hình đặt lịch theo UI Mến sửa 🔼 📅 2026-07-09 ✅ 2026-07-14
 - [ ] Phân chia outlet theo telegram📅 2026-07-14 ⏫ 
 - [ ] Sửa lại action đồng bộ POS  trong telegram📅 2026-07-14 ⏫ 
+- [ ] Bỏ item khi Đặt lịch /📅 2026-07-14 ⏫ 
+- [ ] Tạo CURL sang POS để check cho dễ trên CMS 📅 2026-07-14 🔼 
 
 
