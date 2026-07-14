@@ -33,4 +33,4 @@ if (p.due_date) {
 ## ✅ Tasks
 
 - [x] Làm CR https://jira.apecgroup.net/browse/APFV2-2828 #doing 🔼 📅 2026-07-02 ✅ 2026-07-02
-- [ ] https://jira.apecgroup.net/browse/APFV2-2836 /📅 2026-07-08 ⏫ 
+- [x] https://jira.apecgroup.net/browse/APFV2-2836 / ⏫ 📅 2026-07-08 ✅ 2026-07-14

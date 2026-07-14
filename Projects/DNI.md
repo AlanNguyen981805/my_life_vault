@@ -32,8 +32,8 @@ if (p.due_date) {
 
 ## ✅ Tasks
 - [x] Họp báo cáo tiến độ ⏫ 🔁 every week 📅 2026-07-02 ✅ 2026-07-10
-- [ ] Lỗi: fill thông tin VN title/ EN title sau đó fill các thông tin khác => Save => Mất dữ liệu VN title/ EN title 📅 2026-07-13 🔼 
-- [ ] Lỗi:Doc-out gắn với case, PIC check lỗi => Cancel => Doc-out đó vẫn hiển thị trong case mà không bị xóa 📅 2026-07-13 ⏫ 
+- [x] Lỗi: fill thông tin VN title/ EN title sau đó fill các thông tin khác => Save => Mất dữ liệu VN title/ EN title 🔼 📅 2026-07-13 ✅ 2026-07-14
+- [x] Lỗi:Doc-out gắn với case, PIC check lỗi => Cancel => Doc-out đó vẫn hiển thị trong case mà không bị xóa ⏫ 📅 2026-07-13 ✅ 2026-07-14
 - [ ] Hỏi Hiếu phần đổi PIC trong case đang thay đổi luôn trong inquiry, bug dòng 221 📅 2026-07-14 /⏫  
 - [ ] Báo các chị test bug dòng 233, sửa FE, build xong bảo các chị verify luôn đỡ phải tạo lại case 📅 2026-07-14 /⏫ 
-- [ ] Check với Hiếu 235 và 236 để verify bước cuối cùng xem truyền dữ liệu đúng chư📅 2026-07-14 ⏫ 
+- [ ] Check với Hiếu 235 và 236 để verify bước cuối cùng xem truyền dữ liệu đúng chư 📅 2026-07-14 ⏫ 
