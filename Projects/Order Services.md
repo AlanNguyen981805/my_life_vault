@@ -77,5 +77,6 @@ path includes Order Service
 - [ ] Bỏ item khi Đặt lịch /📅 2026-07-14 ⏫ 
 - [ ] Tạo CURL sang POS để check cho dễ trên CMS 📅 2026-07-14 🔼 
 - [ ] Tạo tool import outlet, món ă📅 2026-07-14 🔼 
+- [ ] Tạo trang bảo trì📅 2026-07-14 ⏫ 
 
 
