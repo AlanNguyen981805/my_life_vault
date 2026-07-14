@@ -76,5 +76,6 @@ path includes Order Service
 - [ ] Sửa lại action đồng bộ POS  trong telegram📅 2026-07-14 ⏫ 
 - [ ] Bỏ item khi Đặt lịch /📅 2026-07-14 ⏫ 
 - [ ] Tạo CURL sang POS để check cho dễ trên CMS 📅 2026-07-14 🔼 
+- [ ] Tạo tool import outlet, món ă📅 2026-07-14 🔼 
 
 
