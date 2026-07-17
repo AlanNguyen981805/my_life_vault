@@ -50,9 +50,6 @@ if (p.due_date) {
 ```
 ------------------------------------------------------------------------
 
-## 
-
-
 
 ## 🔥 Chưa xong
 
@@ -87,5 +84,6 @@ path includes Order Service
 - [x] Mã code đang hiển thị sai khi có location code rồi 🔼 📅 2026-07-14 ✅ 2026-07-17
 - [ ] https://jira.apecgroup.net/browse/MC-57 📅 2026-07-17 ⏫ 
 - [ ] Tích hợp môi trường lên PROD
+
 
 
