@@ -26,6 +26,7 @@ tags:
 - link api: https://docs.google.com/document/d/1V3m2pImb1asm99cfMjtF-ZoWLBBg9N1K/edit?rtpof=true&sd=true
 - link SRS: https://ujbc4oj6ouc.sg.larksuite.com/docx/CJDrdUMrQoQ4SWxNu3blFoZegpN
 - Tài liệu webhook gọi sang POS: https://drive.google.com/file/d/1oUXiyFyr0fpy2uoIu9F0Fqr9mw9uIuMj/view?usp=sharing
+- Check log server:
 
 ------------------------------------------------------------------------
 ## 📊 Trạng thái
