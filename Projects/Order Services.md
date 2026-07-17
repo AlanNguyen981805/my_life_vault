@@ -76,9 +76,11 @@ path includes Order Service
 - [ ] Sửa lại action đồng bộ POS  trong telegram📅 2026-07-14 ⏫ 
 - [x] Bỏ item khi Đặt lịch / ⏫ 📅 2026-07-14 ✅ 2026-07-14
 - [x] Tạo CURL sang POS để check cho dễ trên CMS 🔼 📅 2026-07-14 ✅ 2026-07-14
-- [ ] Tạo tool import outlet, món ă📅 2026-07-14 🔼 
-- [ ] Tạo trang bảo trì📅 2026-07-14 ⏫ 
-- [ ] Kiểm tra Đặt chỗ không được quá sức chứ📅 2026-07-14 ⏫ 
-- [ ] Mã code đang hiển thị sai khi có location code rồi 📅 2026-07-14 🔼 
+- [x] Tạo tool import outlet, món ă 🔼 📅 2026-07-14 ✅ 2026-07-17
+- [x] Tạo trang bảo trì ⏫ 📅 2026-07-14 ✅ 2026-07-17
+- [x] Kiểm tra Đặt chỗ không được quá sức chứ ⏫ 📅 2026-07-14 ✅ 2026-07-17
+- [x] Mã code đang hiển thị sai khi có location code rồi 🔼 📅 2026-07-14 ✅ 2026-07-17
+- [ ] https://jira.apecgroup.net/browse/MC-57 📅 2026-07-17 ⏫ 
+- [ ] Tích hợp môi trường lên PROD
 
 
