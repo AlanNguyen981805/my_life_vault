@@ -84,7 +84,7 @@ path includes Order Service
 - [x] Kiểm tra Đặt chỗ không được quá sức chứ ⏫ 📅 2026-07-14 ✅ 2026-07-17
 - [x] Mã code đang hiển thị sai khi có location code rồi 🔼 📅 2026-07-14 ✅ 2026-07-17
 - [ ] https://jira.apecgroup.net/browse/MC-57 📅 2026-07-17 ⏫ 
-- [ ] Tích hợp môi trường lên PROD
+- [x] Tích hợp môi trường lên PROD ✅ 2026-07-18
 
 
 
