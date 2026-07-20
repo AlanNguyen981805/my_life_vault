@@ -36,6 +36,3 @@ if (p.due_date) {
     - [x] Dựng layout HTML ✅ 2026-07-20
     - [x] Style CSS responsive ✅ 2026-07-20
     - [x] Ghép component vào page ✅ 2026-07-20
-- [ ] Tính giá 
-    - [ ] Viết hàm tính giá theo tier
-    - [ ] Xử lý edge case giảm giá
