@@ -38,8 +38,18 @@ WHERE !completed AND file.path = this.file.path
 
 ## 📋 Tài liệu
 
-- Repo:
-- Deploy / API / Prototype:
+### 🔗 Links
+- Prototype: [Visily](https://app.visily.ai/projects/.../boards/2649806)
+- API docs: [Google Doc](https://docs.google.com/document/d/1V3m2pImb1asm99cfMjtF-ZoWLBBg9N1K)
+- SRS: [Larksuite](https://ujbc4oj6ouc.sg.larksuite.com/docx/CJDrdUMrQoQ4SWxNu3blFoZegpN)
+- Webhook → POS: [Drive](https://drive.google.com/file/d/1oUXiyFyr0fpy2uoIu9F0Fqr9mw9uIuMj/view)
+
+### 🔑 Môi trường TEST
+| Hệ thống | URL | Tài khoản | Mật khẩu |
+|----------|-----|-----------|----------|
+| Web app | [link](https://order-app-test.lotussolution.cloud/home) | 0912312312 | room: 2614 |
+| CMS | [link](https://order-app-cms-test.lotussolution.cloud/) | admin@mandala.local | 12345aA@ |
+| POS | [link](https://sh-test.qcloud.asia/POS/#/module/03201.MMN) | admin | — |
 
 ---
 
