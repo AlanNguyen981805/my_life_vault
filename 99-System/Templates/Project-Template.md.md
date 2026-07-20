@@ -1,4 +1,11 @@
-<%* const name = await tp.system.prompt("Ten du an"); const area = await tp.system.prompt("Area (Work / Ngoai / Ca nhan)", "Work"); const priority = await tp.system.suggester(["high", "medium", "low"], ["high", "medium", "low"], false, "Uu tien"); const days = await tp.system.prompt("Con bao nhieu ngay toi deadline?", "14"); const due = tp.date.now("YYYY-MM-DD", parseInt(days || "14")); await tp.file.rename(name); tR += "---\n"; tR += "fileClass: project\n"; tR += `area: "[[${area}]]"\n`; tR += "status: in-progress\n"; tR += "health: on-track\n"; tR += `priority: ${priority}\n`; tR += "repo: ""\n"; tR += `start_date: ${tp.date.now("YYYY-MM-DD")}\n`; tR += `due_date: ${due}\n`; tR += "tags: [project]\n"; tR += "---\n"; -%>
+<%*
+const name = await tp.system.prompt("Ten du an");
+const area = await tp.system.prompt("Area", "Work");
+const priority = await tp.system.suggester(["high","medium","low"], ["high","medium","low"], false, "Uu tien");
+const days = await tp.system.prompt("Con bao nhieu ngay", "14");
+const due = tp.date.now("YYYY-MM-DD", parseInt(days || "14"));
+await tp.file.rename(name);
+-%>
 
 # <% name %>
 
