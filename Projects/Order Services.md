@@ -56,20 +56,9 @@ if (p.due_date) {
 ```markwhen
 timezone: Asia/Ho_Chi_Minh
 
-section Phát triển
-2026-07-01/2026-07-06: Rà soát hệ thống & thông luồng service
-2026-07-06/2026-07-07: Bàn giao C Duyên test + tích hợp telegram, webhook
-
-section Hoàn thiện
-2026-07-09/2026-07-14: Sửa UI đặt lịch + phân chia outlet + đồng bộ POS
-2026-07-14/2026-07-17: Tool import, trang bảo trì, fix hiển thị mã code
-
-section Bàn giao
-2026-07-17/2026-07-20: Xử lý Jira MC-57 + tích hợp môi trường
+2026-07-01/2026-07-07: Phát triển & bàn giao test
+2026-07-09/2026-07-17: Hoàn thiện theo feedback
 2026-07-18: Deploy PROD #milestone
-```
-```dataviewjs
-
 ```
 
 ## 🔥 Chưa xong
