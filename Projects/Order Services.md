@@ -30,6 +30,8 @@ tags:
 - Tài liệu webhook gọi sang POS: https://drive.google.com/file/d/1oUXiyFyr0fpy2uoIu9F0Fqr9mw9uIuMj/view?usp=sharing
 - Check log server:
 
+
+
 ------------------------------------------------------------------------
 ## 📊 Trạng thái
 ```dataviewjs
@@ -53,13 +55,7 @@ if (p.due_date) {
 ```
 ------------------------------------------------------------------------
 
-```markwhen
-timezone: Asia/Ho_Chi_Minh
-
-2026-07-01/2026-07-07: Phát triển & bàn giao test
-2026-07-09/2026-07-17: Hoàn thiện theo feedback
-2026-07-18: Deploy PROD #milestone
-```
+## 📅 Timeline ![[Order Services.mw]]
 
 ## 🔥 Chưa xong
 
