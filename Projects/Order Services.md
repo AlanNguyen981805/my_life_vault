@@ -51,7 +51,48 @@ if (p.due_date) {
 ```
 ------------------------------------------------------------------------
 
+```dataviewjs
+// ============================================================
+//  GANTT TIMELINE - tự sinh từ task trong file này
+//  Task cần: 🛫 ngày bắt đầu  +  📅 deadline
+//  VD:  - [ ] Việc A 🔼 🛫 2026-07-10 📅 2026-07-14
+//  Task thiếu ngày sẽ bị bỏ qua.
+// ============================================================
+const p = dv.current();
 
+// Lấy task cha có đủ start + due
+const tasks = p.file.tasks.where(t => !t.parent && t.start && t.due);
+
+if (!tasks.length) {
+  dv.paragraph("_Chưa có task nào đủ 🛫 (start) và 📅 (due) để vẽ timeline._");
+} else {
+  let m = "gantt\n";
+  m += "  dateFormat YYYY-MM-DD\n";
+  m += "  axisFormat %d/%m\n";
+  m += "  todayMarker on\n";
+  m += "  section Tasks\n";
+
+  for (const t of tasks) {
+    const s = dv.date(t.start).toFormat("yyyy-MM-dd");
+    const e = dv.date(t.due).toFormat("yyyy-MM-dd");
+
+    // Làm sạch tên task: cắt phần emoji/ngày, bỏ ký tự gây lỗi mermaid
+    let label = t.text
+      .replace(/[🛫📅✅⏳⏫🔼🔽🔺⏬]/g, "")      // bỏ emoji ưu tiên/ngày
+      .replace(/\d{4}-\d{2}-\d{2}/g, "")          // bỏ chuỗi ngày
+      .replace(/#[^\s]+/g, "")                    // bỏ tag
+      .replace(/[:;,#\[\]]/g, "")                 // bỏ ký tự làm hỏng cú pháp
+      .trim()
+      .slice(0, 35);                              // giới hạn độ dài
+    if (!label) label = "task";
+
+    const state = t.completed ? "done, " : "active, ";
+    m += `  ${label} :${state}${s}, ${e}\n`;
+  }
+
+  dv.paragraph("```mermaid\n" + m + "```");
+}
+```
 
 ## 🔥 Chưa xong
 
@@ -76,10 +117,10 @@ path includes Order Service
 	- [x] Fix bug lỗi item ở giỏ hàng bị nhảy index khi add item không thành công / 🔼 📅 2026-07-07 ✅ 2026-07-11
 	- [x] API wehook trả cho a Trường 2 field orderNo để lưu và QR khi thanh toán / 🔼 📅 2026-07-09 ✅ 2026-07-10
 	- [x] Sửa lại màn hình đặt lịch theo UI Mến sửa 🔼 📅 2026-07-09 ✅ 2026-07-14
-- [x] Phân chia outlet theo telegram ⏫ 📅 2026-07-14 ✅ 2026-07-20
+- [ ] Phân chia outlet theo telegram ⏫ 📅 2026-07-14
 - [x] Sửa lại action đồng bộ POS  trong telegram ⏫ 📅 2026-07-14 ✅ 2026-07-20
-- [x] Bỏ item khi Đặt lịch / ⏫ 📅 2026-07-14 ✅ 2026-07-14
-- [x] Tạo CURL sang POS để check cho dễ trên CMS 🔼 📅 2026-07-14 ✅ 2026-07-14
+- [ ] Bỏ item khi Đặt lịch / ⏫ 📅 2026-07-14
+- [ ] Tạo CURL sang POS để check cho dễ trên CMS 🔼 📅 2026-07-14
 - [x] Tạo tool import outlet, món ă 🔼 📅 2026-07-14 ✅ 2026-07-17
 - [x] Tạo trang bảo trì ⏫ 📅 2026-07-14 ✅ 2026-07-17
 - [x] Kiểm tra Đặt chỗ không được quá sức chứ ⏫ 📅 2026-07-14 ✅ 2026-07-17
