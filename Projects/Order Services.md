@@ -53,47 +53,23 @@ if (p.due_date) {
 ```
 ------------------------------------------------------------------------
 
+```markwhen
+timezone: Asia/Ho_Chi_Minh
+
+section Phát triển
+2026-07-01/2026-07-06: Rà soát hệ thống & thông luồng service
+2026-07-06/2026-07-07: Bàn giao C Duyên test + tích hợp telegram, webhook
+
+section Hoàn thiện
+2026-07-09/2026-07-14: Sửa UI đặt lịch + phân chia outlet + đồng bộ POS
+2026-07-14/2026-07-17: Tool import, trang bảo trì, fix hiển thị mã code
+
+section Bàn giao
+2026-07-17/2026-07-20: Xử lý Jira MC-57 + tích hợp môi trường
+2026-07-18: Deploy PROD #milestone
+```
 ```dataviewjs
-// ============================================================
-//  GANTT TIMELINE - tự sinh từ task trong file này
-//  Task cần: 🛫 ngày bắt đầu  +  📅 deadline
-//  VD:  - [ ] Việc A 🔼 🛫 2026-07-10 📅 2026-07-14
-//  Task thiếu ngày sẽ bị bỏ qua.
-// ============================================================
-const p = dv.current();
 
-// Lấy task cha có đủ start + due
-const tasks = p.file.tasks.where(t => !t.parent && t.start && t.due);
-
-if (!tasks.length) {
-  dv.paragraph("_Chưa có task nào đủ 🛫 (start) và 📅 (due) để vẽ timeline._");
-} else {
-  let m = "gantt\n";
-  m += "  dateFormat YYYY-MM-DD\n";
-  m += "  axisFormat %d/%m\n";
-  m += "  todayMarker on\n";
-  m += "  section Tasks\n";
-
-  for (const t of tasks) {
-    const s = dv.date(t.start).toFormat("yyyy-MM-dd");
-    const e = dv.date(t.due).toFormat("yyyy-MM-dd");
-
-    // Làm sạch tên task: cắt phần emoji/ngày, bỏ ký tự gây lỗi mermaid
-    let label = t.text
-      .replace(/[🛫📅✅⏳⏫🔼🔽🔺⏬]/g, "")      // bỏ emoji ưu tiên/ngày
-      .replace(/\d{4}-\d{2}-\d{2}/g, "")          // bỏ chuỗi ngày
-      .replace(/#[^\s]+/g, "")                    // bỏ tag
-      .replace(/[:;,#\[\]]/g, "")                 // bỏ ký tự làm hỏng cú pháp
-      .trim()
-      .slice(0, 35);                              // giới hạn độ dài
-    if (!label) label = "task";
-
-    const state = t.completed ? "done, " : "active, ";
-    m += `  ${label} :${state}${s}, ${e}\n`;
-  }
-
-  dv.paragraph("```mermaid\n" + m + "```");
-}
 ```
 
 ## 🔥 Chưa xong
