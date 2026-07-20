@@ -117,16 +117,17 @@ path includes Order Service
 	- [x] Fix bug lỗi item ở giỏ hàng bị nhảy index khi add item không thành công / 🔼 📅 2026-07-07 ✅ 2026-07-11
 	- [x] API wehook trả cho a Trường 2 field orderNo để lưu và QR khi thanh toán / 🔼 📅 2026-07-09 ✅ 2026-07-10
 	- [x] Sửa lại màn hình đặt lịch theo UI Mến sửa 🔼 📅 2026-07-09 ✅ 2026-07-14
-- [ ] Phân chia outlet theo telegram ⏫ 📅 2026-07-14
+- [x] Phân chia outlet theo telegram ⏫ 📅 2026-07-14 ✅ 2026-07-20
 - [x] Sửa lại action đồng bộ POS  trong telegram ⏫ 📅 2026-07-14 ✅ 2026-07-20
-- [ ] Bỏ item khi Đặt lịch / ⏫ 📅 2026-07-14
-- [ ] Tạo CURL sang POS để check cho dễ trên CMS 🔼 📅 2026-07-14
+- [x] Bỏ item khi Đặt lịch / ⏫ 📅 2026-07-14 ✅ 2026-07-14
+- [x] Tạo CURL sang POS để check cho dễ trên CMS 🔼 📅 2026-07-14 ✅ 2026-07-14
 - [x] Tạo tool import outlet, món ă 🔼 📅 2026-07-14 ✅ 2026-07-17
 - [x] Tạo trang bảo trì ⏫ 📅 2026-07-14 ✅ 2026-07-17
 - [x] Kiểm tra Đặt chỗ không được quá sức chứ ⏫ 📅 2026-07-14 ✅ 2026-07-17
 - [x] Mã code đang hiển thị sai khi có location code rồi 🔼 📅 2026-07-14 ✅ 2026-07-17
 - [x] https://jira.apecgroup.net/browse/MC-57 ⏫ 📅 2026-07-17 ✅ 2026-07-20
 - [x] Tích hợp môi trường lên PROD ✅ 2026-07-18
+- [ ] [ ] Task test 🛫 2026-07-08 📅 2026-07-12
 
 
 
