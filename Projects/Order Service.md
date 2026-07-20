@@ -56,7 +56,7 @@ WHERE !completed AND file.path = this.file.path
 | -------- | ------------------------------------------------------------- | ------------------- | ---------- |
 | Web app  | [link](https://order-app.lotussolution.cloud?hotelCode=MDLKB) | 0912312312          | room: 2614 |
 | CMS      | [link](https://order-app-cms.lotussolution.cloud/)            | admin@mandala.local | 12345aA@   |
-| POS      | [link](kb.mandal)                                             | admin               | —          |
+| POS      | [link]                                                        | admin               | —          |
 
 ---
 
@@ -65,3 +65,8 @@ WHERE !completed AND file.path = this.file.path
 <!-- Gõ task ở đây. Xong tick, "Cần làm" ở trên tự lọc. - [ ] Việc cha 🔼 📅 2026-07-20 - [ ] Subtask (thụt lề) Đã xong nhiều thì fold mục này lại cho gọn. -->
 
 - [ ]
+
+## ⚠️ Nợ kỹ thuật
+- [ ] Hardcode room ID trong webhook, cần config hóa 🔽 #techdebt
+- [ ] Chưa handle race condition khi add item nhanh #techdebt
+- [ ] API tính giá viết tạm, chưa tách service #techdebt
