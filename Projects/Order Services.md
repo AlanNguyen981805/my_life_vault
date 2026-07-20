@@ -94,4 +94,5 @@ path includes Order Service
 ## QUESTION
 - khách thanh toán trước đơn -> muốn sửa trực tiếp đơn 
 - khách chỉ có thể thanh toán được khi mà nhà hàng hoàn toàn đáp ứng được
-muốn sửa lại đơn trước khi thanh toán =>
+? muốn sửa lại đơn trước khi thanh toán 
+khách tự thanh toán => đóng bàn => in ra bill
