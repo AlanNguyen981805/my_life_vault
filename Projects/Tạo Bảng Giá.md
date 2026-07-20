@@ -32,10 +32,10 @@ if (p.due_date) {
 ```
 
 ## ✅ Tasks
-- [ ] Clone giao diện bảng giá 
-    - [ ] Dựng layout HTML
-    - [ ] Style CSS responsive
-    - [ ] Ghép component vào page
+- [x] Clone giao diện bảng giá ✅ 2026-07-20
+    - [x] Dựng layout HTML ✅ 2026-07-20
+    - [x] Style CSS responsive ✅ 2026-07-20
+    - [x] Ghép component vào page ✅ 2026-07-20
 - [ ] Tính giá 
     - [ ] Viết hàm tính giá theo tier
     - [ ] Xử lý edge case giảm giá
