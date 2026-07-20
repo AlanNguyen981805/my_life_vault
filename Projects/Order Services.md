@@ -96,4 +96,4 @@ path includes Order Service
 - khách chỉ có thể thanh toán được khi mà nhà hàng hoàn toàn đáp ứng được
 ? muốn sửa lại đơn trước khi thanh toán 
 khách tự thanh toán => đóng bàn => in ra bill
-thêm thanh
+thêm thanh toán pos vào phòng, và chỉ mở cho room service
