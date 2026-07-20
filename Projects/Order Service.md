@@ -50,6 +50,13 @@ WHERE !completed AND file.path = this.file.path
 | Web app | [link](https://order-app-test.lotussolution.cloud/home) | 0912312312 | room: 2614 |
 | CMS | [link](https://order-app-cms-test.lotussolution.cloud/) | admin@mandala.local | 12345aA@ |
 | POS | [link](https://sh-test.qcloud.asia/POS/#/module/03201.MMN) | admin | — |
+### 🔑 Môi trường PILOT
+
+| Hệ thống | URL                                                           | Tài khoản           | Mật khẩu   |
+| -------- | ------------------------------------------------------------- | ------------------- | ---------- |
+| Web app  | [link](https://order-app.lotussolution.cloud?hotelCode=MDLKB) | 0912312312          | room: 2614 |
+| CMS      | [link](https://order-app-cms.lotussolution.cloud/)            | admin@mandala.local | 12345aA@   |
+| POS      | [link](kb.mandal)                                             | admin               | —          |
 
 ---
 
