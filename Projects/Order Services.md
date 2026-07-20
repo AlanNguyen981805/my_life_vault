@@ -88,3 +88,8 @@ path includes Order Service
 
 
 
+
+
+
+## QUESTION
+- khách thanh toán trước đơn ->
