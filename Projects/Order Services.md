@@ -92,4 +92,4 @@ path includes Order Service
 
 
 ## QUESTION
-- khách thanh toán trước đơn ->
+- khách thanh toán trước đơn -> muốn sửa trực tiếp đơn 
