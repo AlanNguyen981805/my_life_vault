@@ -27,7 +27,6 @@ if (p.due_date) {
 ---
 
 ## 🔥 Cần làm
-
 ```dataview
 TASK
 WHERE !completed AND file.path = this.file.path
@@ -47,4 +46,4 @@ WHERE !completed AND file.path = this.file.path
 
 <!-- Gõ task ở đây. Xong tick, "Cần làm" ở trên tự lọc. - [ ] Việc cha 🔼 📅 2026-07-20 - [ ] Subtask (thụt lề) Đã xong nhiều thì fold mục này lại cho gọn. -->
 
-- [ ]
+- [ ] Đọc mail tài liệu và sửa lại theo công thức yêu cầu 🔺 📅 2026-07-21 #doing 

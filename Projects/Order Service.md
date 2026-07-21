@@ -1,7 +1,6 @@
 
-
 ## 📊 Trạng thái
-
+- 20/07/2026: Đã bàn giao pilot, đang trong quá trình triển khai thử nghiệm tại KIM BÔI
 ```dataviewjs
 const p = dv.current();
 const top = p.file.tasks.where(t => !t.parent);
@@ -39,9 +38,10 @@ WHERE !completed AND file.path = this.file.path
 
 ### 🔗 Links
 - Prototype: [Visily](https://app.visily.ai/projects/.../boards/2649806)
-- API docs: [Google Doc](https://docs.google.com/document/d/1V3m2pImb1asm99cfMjtF-ZoWLBBg9N1K)
+- API POS docs: [Google Doc](https://docs.google.com/document/d/1V3m2pImb1asm99cfMjtF-ZoWLBBg9N1K)
 - SRS: [Larksuite](https://ujbc4oj6ouc.sg.larksuite.com/docx/CJDrdUMrQoQ4SWxNu3blFoZegpN)
 - Webhook → POS: [Drive](https://drive.google.com/file/d/1oUXiyFyr0fpy2uoIu9F0Fqr9mw9uIuMj/view)
+- Source git: [Git](https://github.com/APECGROUP/Fourier.Lotus.OrderApp)
 
 ### 🔑 Môi trường TEST
 | Hệ thống | URL | Tài khoản | Mật khẩu |
@@ -55,7 +55,7 @@ WHERE !completed AND file.path = this.file.path
 | -------- | ------------------------------------------------------------- | ------------------- | ---------- |
 | Web app  | [link](https://order-app.lotussolution.cloud?hotelCode=MDLKB) | 0912312312          | room: 2614 |
 | CMS      | [link](https://order-app-cms.lotussolution.cloud/)            | admin@mandala.local | 12345aA@   |
-| POS      | [link]                                                        | admin               | —          |
+| POS      | [link]                                                        |                     | —          |
 
 ---
 
@@ -63,9 +63,10 @@ WHERE !completed AND file.path = this.file.path
 
 <!-- Gõ task ở đây. Xong tick, "Cần làm" ở trên tự lọc. - [ ] Việc cha 🔼 📅 2026-07-20 - [ ] Subtask (thụt lề) Đã xong nhiều thì fold mục này lại cho gọn. -->
 
-- [ ]
+- [ ] 📅 2026-07-21 🔼  Note OT
+	- Thứ 7: làm từ 12h trưa -> 18h30 tối
+	- Chủ nhật: làm cả ngày
 
 ## ⚠️ Nợ kỹ thuật
-- [ ] Hardcode room ID trong webhook, cần config hóa 🔽 #techdebt
-- [ ] Chưa handle race condition khi add item nhanh #techdebt
-- [ ] API tính giá viết tạm, chưa tách service #techdebt
+- [ ] Hardcode hotelCode trong source, cần config hóa từ env #techdebt 🔽
+- [ ] Tạo doc API CMS🔽 #techdebt 

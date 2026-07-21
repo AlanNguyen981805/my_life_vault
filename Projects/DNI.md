@@ -1,39 +1,49 @@
----
-fileClass: project
-area: "[[Work]]"
-status: in-progress
-health: at-risk
-priority: high
-start_date: 2026-06-30
-due_date: 2026-07-02
-tags: [project]
----
+
 
 ## 📊 Trạng thái
+
 ```dataviewjs
 const p = dv.current();
-
-// Đếm task NẰM TRONG CHÍNH FILE NÀY
-const tasks = p.file.tasks;
-const done = tasks.where(t => t.completed).length;
-const total = tasks.length;
+const top = p.file.tasks.where(t => !t.parent);
+const done = top.where(t => t.completed).length;
+const total = top.length;
 const pct = total ? Math.round(done / total * 100) : 0;
-
 const bar = "█".repeat(Math.round(pct/10)) + "░".repeat(10 - Math.round(pct/10));
 
-dv.paragraph(`**Status:** ${p.status} · **Health:** ${p.health} · **Due:** ${p.due_date}`);
 dv.paragraph(`**Tiến độ:** ${bar} ${pct}% (${done}/${total})`);
 
 if (p.due_date) {
-  const left = Math.ceil((dv.date(p.due_date) - dv.date("today")) / 86400000);
-  dv.paragraph(`⏳ Còn **${left} ngày** tới deadline`);
+  const d = dv.date(p.due_date);
+  const left = Math.ceil((d - dv.date("today")) / 86400000);
+  let flag, txt;
+  if (left < 0)        { flag = "🔴 QUÁ HẠN"; txt = `quá ${Math.abs(left)} ngày`; }
+  else if (left === 0) { flag = "🟡 HÔM NAY"; txt = "hết hạn hôm nay"; }
+  else if (left <= 2)  { flag = "🟡 GẤP";     txt = `còn ${left} ngày`; }
+  else                 { flag = "🟢";         txt = `còn ${left} ngày`; }
+  dv.paragraph(`⏳ ${flag} — ${txt} (deadline ${d.toFormat("dd/MM/yyyy")})`);
 }
 ```
 
-## ✅ Tasks
-- [x] Họp báo cáo tiến độ ⏫ 🔁 every week 📅 2026-07-02 ✅ 2026-07-10
-- [x] Lỗi: fill thông tin VN title/ EN title sau đó fill các thông tin khác => Save => Mất dữ liệu VN title/ EN title 🔼 📅 2026-07-13 ✅ 2026-07-14
-- [x] Lỗi:Doc-out gắn với case, PIC check lỗi => Cancel => Doc-out đó vẫn hiển thị trong case mà không bị xóa ⏫ 📅 2026-07-13 ✅ 2026-07-14
-- [ ] Hỏi Hiếu phần đổi PIC trong case đang thay đổi luôn trong inquiry, bug dòng 221 📅 2026-07-14 ⏫ 
-- [ ] Báo các chị test bug dòng 233, sửa FE, build xong bảo các chị verify luôn đỡ phải tạo lại case 📅 2026-07-14 ⏫ 
-- [ ] Check với Hiếu 235 và 236 để verify bước cuối cùng xem truyền dữ liệu đúng chư 📅 2026-07-14 ⏫ 
+---
+
+## 🔥 Cần làm
+
+```dataview
+TASK
+WHERE !completed AND file.path = this.file.path
+```
+
+---
+
+## 📋 Tài liệu
+
+- Repo:
+- Deploy / API / Prototype:
+
+---
+
+## 🗂️ Kho task (fold — nơi gõ mọi task)
+
+<!-- Gõ task ở đây. Xong tick, "Cần làm" ở trên tự lọc. - [ ] Việc cha 🔼 📅 2026-07-20 - [ ] Subtask (thụt lề) Đã xong nhiều thì fold mục này lại cho gọn. -->
+
+- [ ]
