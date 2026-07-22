@@ -44,11 +44,11 @@ WHERE !completed AND file.path = this.file.path
 - Source git: [Git](https://github.com/APECGROUP/Fourier.Lotus.OrderApp)
 
 ### 🔑 Môi trường TEST
-| Hệ thống | URL | Tài khoản | Mật khẩu |
-|----------|-----|-----------|----------|
-| Web app | [link](https://order-app-test.lotussolution.cloud/home) | 0912312312 | room: 2614 |
-| CMS | [link](https://order-app-cms-test.lotussolution.cloud/) | admin@mandala.local | 12345aA@ |
-| POS | [link](https://sh-test.qcloud.asia/POS/#/module/03201.MMN) | admin | — |
+| Hệ thống | URL                                                        | Tài khoản           | Mật khẩu   |
+| -------- | ---------------------------------------------------------- | ------------------- | ---------- |
+| Web app  | [link](https://order-app-test.lotussolution.cloud/home)    | 0912312312          | room: 2614 |
+| CMS      | [link](https://order-app-cms-test.lotussolution.cloud/)    | admin@mandala.local | 12345aA@   |
+| POS      | [link](https://sh-test.qcloud.asia/POS/#/module/03201.MMN) | admin               | —          |
 ### 🔑 Môi trường PILOT
 
 | Hệ thống | URL                                                           | Tài khoản           | Mật khẩu   |
