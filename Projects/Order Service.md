@@ -66,6 +66,9 @@ WHERE !completed AND file.path = this.file.path
 - [ ] 📅 2026-07-21 🔼  Note OT
 	- Thứ 7: làm từ 12h trưa -> 18h30 tối
 	- Chủ nhật: làm cả ngày
+- [ ] 📅 2026-07-22 🔼 Thêm ghi chú ở chi tiết đơn hàng
+- [ ] 📅 2026-07-22 ⏫ Estimate phase 2
+- [x] 📅 2026-07-22 🔼 Chuyển hết trạng thái bugs
 
 ## ⚠️ Nợ kỹ thuật
 - [ ] Hardcode hotelCode trong source, cần config hóa từ env #techdebt 🔽
