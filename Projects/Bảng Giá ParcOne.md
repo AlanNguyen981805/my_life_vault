@@ -49,4 +49,4 @@ WHERE !completed AND file.path = this.file.path
 - [x] Đọc mail tài liệu và sửa lại theo công thức yêu cầu #doing 🔺 📅 2026-07-21
 	- [x] Tạo bảng giá theo 4 nhà cung cấp 📅 2026-07-24 ⏫
 - [x] 📅 2026-07-22 🔼 Đẩy source lên git
-- [ ] Note OT chủ nhật ngày 25
+- [x] Note OT chủ nhật ngày 25
