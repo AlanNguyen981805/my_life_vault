@@ -73,4 +73,4 @@ WHERE !completed AND file.path = this.file.path
 
 ## ⚠️ Nợ kỹ thuật
 - [ ] Hardcode hotelCode trong source, cần config hóa từ env #techdebt 🔽
-- [ ] Tạo doc API CMS🔽 #techdebt 
+- [x] Tạo doc API CMS🔽 #techdebt
