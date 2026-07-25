@@ -27,11 +27,11 @@ if (p.due_date) {
 ---
 
 ## 🔥 Cần làm
-```dataview
-TASK
-WHERE !completed AND file.path = this.file.path
+```tasks
+not done
+path includes {{query.file.path}}
+short mode
 ```
-
 ---
 
 ## 📋 Tài liệu
@@ -46,7 +46,7 @@ WHERE !completed AND file.path = this.file.path
 
 <!-- Gõ task ở đây. Xong tick, "Cần làm" ở trên tự lọc. - [ ] Việc cha 🔼 📅 2026-07-20 - [ ] Subtask (thụt lề) Đã xong nhiều thì fold mục này lại cho gọn. -->
 
-- [x] Đọc mail tài liệu và sửa lại theo công thức yêu cầu #doing 🔺 📅 2026-07-21
+- [x] Đọc mail tài liệu và sửa lại theo công thức yêu cầu #doing 🔺 📅 2026-07-21 ✅ 2026-07-25
 	- [x] Tạo bảng giá theo 4 nhà cung cấp 📅 2026-07-24 ⏫
 - [x] 📅 2026-07-22 🔼 Đẩy source lên git
 - [x] Note OT chủ nhật ngày 25
