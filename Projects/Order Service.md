@@ -61,7 +61,7 @@ short mode
 
 <!-- Gõ task ở đây. Xong tick, "Cần làm" ở trên tự lọc. - [ ] Việc cha 🔼 📅 2026-07-20 - [ ] Subtask (thụt lề) Đã xong nhiều thì fold mục này lại cho gọn. -->
 
-- [ ] Note OT 🔼 📅 2026-07-26 ✅ 2026-07-25
+- [ ] Note OT 🔼 📅 2026-07-26
 	- Thứ 7: làm từ 12h trưa -> 18h30 tối
 	- Chủ nhật: làm cả ngày
 - [x] 📅 2026-07-22 🔼 Thêm ghi chú ở chi tiết đơn hàng ✅ 2026-07-25
