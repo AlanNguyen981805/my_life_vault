@@ -26,21 +26,6 @@ if (p.due_date) {
 ---
 
 ## 🔥 Cần làm
-
-```dataview
-TASK
-WHERE !completed AND file.path = this.file.path
-```
-
----
-
-## 🔥 Cần làm
-```tasks
-not done
-path includes {{query.file.path}}
-```
-
-## 🔥 Cần làm
 ```tasks
 not done
 path includes {{query.file.path}}
@@ -76,7 +61,7 @@ short mode
 
 <!-- Gõ task ở đây. Xong tick, "Cần làm" ở trên tự lọc. - [ ] Việc cha 🔼 📅 2026-07-20 - [ ] Subtask (thụt lề) Đã xong nhiều thì fold mục này lại cho gọn. -->
 
-- [ ] Note OT 🔼 📅 2026-07-21
+- [ ] Note OT 🔼 📅 2026-07-26
 	- Thứ 7: làm từ 12h trưa -> 18h30 tối
 	- Chủ nhật: làm cả ngày
 - [ ] 📅 2026-07-22 🔼 Thêm ghi chú ở chi tiết đơn hàng
