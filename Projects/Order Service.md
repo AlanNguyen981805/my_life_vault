@@ -63,7 +63,7 @@ WHERE !completed AND file.path = this.file.path
 
 <!-- Gõ task ở đây. Xong tick, "Cần làm" ở trên tự lọc. - [ ] Việc cha 🔼 📅 2026-07-20 - [ ] Subtask (thụt lề) Đã xong nhiều thì fold mục này lại cho gọn. -->
 
-- [x] Note OT 📅 2026-07-21 🔼
+- [ ] Note OT 🔼 📅 2026-07-21
 	- Thứ 7: làm từ 12h trưa -> 18h30 tối
 	- Chủ nhật: làm cả ngày
 - [ ] 📅 2026-07-22 🔼 Thêm ghi chú ở chi tiết đơn hàng
