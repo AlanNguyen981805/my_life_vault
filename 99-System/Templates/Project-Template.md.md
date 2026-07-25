@@ -44,6 +44,12 @@ WHERE !completed AND file.path = this.file.path
 
 ---
 
+## 🔥 Cần làm
+```tasks
+not done
+path includes {{query.file.path}}
+```
+
 ## 📋 Tài liệu
 
 - Repo:
