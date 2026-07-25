@@ -48,4 +48,7 @@ WHERE !completed AND file.path = this.file.path
 
 <!-- Gõ task ở đây. Xong tick, "Cần làm" ở trên tự lọc. - [ ] Việc cha 🔼 📅 2026-07-20 - [ ] Subtask (thụt lề) Đã xong nhiều thì fold mục này lại cho gọn. -->
 
-- [ ]
+- [ ] Confirm với Hiếu sửa  📅 2026-07-26 
+	- [ ]  ghi nhận doc-in trong History
+ * ghi nhận doc-in trong History
+ * KHÔNG nhảy deadline với case có status "ABANDONED"
