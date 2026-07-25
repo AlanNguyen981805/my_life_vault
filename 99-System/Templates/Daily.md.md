@@ -1,4 +1,4 @@
-
+---
 
 ## fileClass: daily date: <% tp.date.now("YYYY-MM-DD") %> tags: [daily]
 
@@ -7,36 +7,79 @@
 ## 🎯 Trọng tâm hôm nay
 
 ```dataviewjs
-// Lấy tầng ưu tiên CAO NHẤT đang có task chưa xong.
-// Hết mức cao mới tụt xuống mức thấp hơn. Nhóm theo project. Hiện cả done.
-// Đổi "Projects" nếu thư mục của bạn tên khác.
+// Tầng ưu tiên cao nhất đang có task CHƯA xong. Chỉ hiện task chưa xong. Nhóm theo project.
 const pages = dv.pages('"Projects"');
 
-let all = [];
-for (const p of pages) {
-  for (const t of p.file.tasks) {
-    if (!t.parent) all.push({ t, proj: p.file.link, projName: p.file.name });
+function prNum(t) {
+  const p = t.priority;
+  const byStr = { highest: 5, high: 4, medium: 3, normal: 3, low: 2, lowest: 1 };
+  if (typeof p === "string" && byStr[p.toLowerCase()] != null) return byStr[p.toLowerCase()];
+  const byNum = { "0": 5, "1": 4, "2": 3, "3": 2, "4": 1 };
+  if (byNum[String(p)] != null) return byNum[String(p)];
+  return 3;
+}
+
+// chỉ xét task CHƯA xong
+let pending = [];
+for (const pg of pages) {
+  for (const t of pg.file.tasks) {
+    if (!t.parent && !t.completed) pending.push({ t, proj: pg.file.link, projName: pg.file.name });
   }
 }
 
-const rank = { highest: 5, high: 4, medium: 3, low: 2, lowest: 1 };
-const prNum = (t) => rank[t.priority] ?? 3;
-
-const pending = all.filter(x => !x.t.completed);
 if (!pending.length) {
   dv.paragraph("🎉 Không còn task nào chưa xong!");
 } else {
   const maxRank = Math.max(...pending.map(x => prNum(x.t)));
-  const focus = all.filter(x => prNum(x.t) === maxRank);
+  const focus = pending.filter(x => prNum(x.t) === maxRank);
 
   const groups = {};
-  for (const x of focus) {
-    (groups[x.projName] ??= { link: x.proj, tasks: [] }).tasks.push(x.t);
-  }
+  for (const x of focus) (groups[x.projName] ??= { link: x.proj, tasks: [] }).tasks.push(x.t);
 
   const label = { 5:"🔺 Highest", 4:"⏫ High", 3:"🔼 Medium", 2:"🔽 Low", 1:"⏬ Lowest" }[maxRank];
   dv.paragraph(`**Mức ưu tiên:** ${label}`);
 
+  for (const name in groups) {
+    dv.header(4, groups[name].link);
+    dv.taskList(groups[name].tasks, false);
+  }
+}
+```
+
+---
+
+## 📅 Đến hạn hôm nay
+
+```tasks
+not done
+due on this day
+group by filename
+short mode
+```
+
+---
+
+## ✅ Đã xong hôm nay
+
+```dataviewjs
+// Task hoàn thành hôm nay, nhóm theo project.
+// Cần bật Settings > Tasks > "Set done date on every completed task".
+const today = dv.current().file.name;
+const pages = dv.pages('"Projects"');
+
+const groups = {};
+for (const pg of pages) {
+  for (const t of pg.file.tasks) {
+    if (t.completed && t.completion &&
+        dv.date(t.completion).toFormat("yyyy-MM-dd") === today) {
+      (groups[pg.file.name] ??= { link: pg.file.link, tasks: [] }).tasks.push(t);
+    }
+  }
+}
+
+if (!Object.keys(groups).length) {
+  dv.paragraph("_Chưa hoàn thành task nào hôm nay._");
+} else {
   for (const name in groups) {
     dv.header(4, groups[name].link);
     dv.taskList(groups[name].tasks, false);
