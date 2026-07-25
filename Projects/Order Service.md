@@ -66,7 +66,7 @@ WHERE !completed AND file.path = this.file.path
 - [ ] Note OT 🔼 📅 2026-07-21
 	- Thứ 7: làm từ 12h trưa -> 18h30 tối
 	- Chủ nhật: làm cả ngày
-- [ ] 📅 2026-07-22 🔼 Thêm ghi chú ở chi tiết đơn hàng
+- [x] 📅 2026-07-22 🔼 Thêm ghi chú ở chi tiết đơn hàng
 - [x] 📅 2026-07-22 ⏫ Estimate phase 2
 - [x] 📅 2026-07-22 🔼 Chuyển hết trạng thái bugs
 - [x] 📅 2026-07-23 🔺 Sửa lại kiến trúc để quản lý CMS theo từng khách sạn
