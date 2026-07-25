@@ -28,6 +28,7 @@ if (p.due_date) {
 ---
 
 ## 🔥 Cần làm
+
 ```tasks
 not done
 path includes {{query.file.path}}
@@ -44,6 +45,5 @@ short mode
 
 <!-- Gõ task ở đây. Xong tick, "Cần làm" ở trên tự lọc. - [ ] Việc cha 🔼 📅 2026-07-20 - [ ] Subtask (thụt lề) Đã xong nhiều thì fold mục này lại cho gọn. -->
 
-- [ ] Làm báo cáo tuần 🔁 every week 
-- [x] sss ✅ 2026-07-25
-- 
+- [ ] Làm báo cáo tuần 🔁 every week on Saturday ➕ 2026-07-25 📅 2026-08-01
+- [x] Làm báo cáo tuần 🔁 every week on Saturday 📅 2026-07-25

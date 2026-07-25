@@ -49,4 +49,5 @@ short mode
 - [x] Đọc mail tài liệu và sửa lại theo công thức yêu cầu #doing 🔺 📅 2026-07-21 ✅ 2026-07-25
 	- [x] Tạo bảng giá theo 4 nhà cung cấp 📅 2026-07-24 ⏫
 - [x] 📅 2026-07-22 🔼 Đẩy source lên git
-- [x] Note OT chủ nhật ngày 25
+- [ ] Note OT chủ nhật ngày 25
+	- làm thêm từ tối thứ 6 hôm trước đến chiều ngày 25
