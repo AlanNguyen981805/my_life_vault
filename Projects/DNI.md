@@ -47,7 +47,7 @@ WHERE !completed AND file.path = this.file.path
 ## 🗂️ Kho task (fold — nơi gõ mọi task)
 
 <!-- Gõ task ở đây. Xong tick, "Cần làm" ở trên tự lọc. - [ ] Việc cha 🔼 📅 2026-07-20 - [ ] Subtask (thụt lề) Đã xong nhiều thì fold mục này lại cho gọn. -->
-
+- [ ] Hỏi lại logic dòng 221 khi inquiry thay đổi case -> PIC thay đổi -> case trong patent thì có thay đổi theo PIC không? ⏫ 📅 2026-07-26
 
 - [x] Confirm với Hiếu sửa BE ⏫ 📅 2026-07-26 ✅ 2026-07-26
 	- [x] ghi nhận doc-in trong History ✅ 2026-07-26
