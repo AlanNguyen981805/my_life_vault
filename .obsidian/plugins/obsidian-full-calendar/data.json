@@ -2,7 +2,7 @@
   "calendarSources": [
     {
       "type": "local",
-      "color": "#9e9e9e",
+      "color": "#bababa",
       "directory": "99-System"
     }
   ],
@@ -12,5 +12,5 @@
     "desktop": "timeGridWeek",
     "mobile": "timeGrid3Days"
   },
-  "timeFormat24h": false
+  "timeFormat24h": true
 }
