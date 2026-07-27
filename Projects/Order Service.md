@@ -71,7 +71,6 @@ short mode
 - [x] 📅 2026-07-23 🔺 Sửa lại kiến trúc để quản lý CMS theo từng khách sạn
 - [ ] Kiểm tra tại sao ở Prod lại bị mất dữ liệu đơn hàng của khách 📅 2026-07-25 
 
-
 ## ⚠️ Nợ kỹ thuật
 - [x] Hardcode hotelCode trong source, cần config hóa từ env #techdebt 🔽
 - [x] Tạo doc API CMS🔽 #techdebt
