@@ -1,0 +1,5 @@
+- Auto VPS [link](https://id.thuevpsgiare.vn/clientarea.php?action=productdetails&id=25092)
+- IP: 103.20.97.82
+	- root/hpTE8991a@
+- Thời gian thuê: 1/10/2026
+- Thời gian hết hạn: 1/11/2026
