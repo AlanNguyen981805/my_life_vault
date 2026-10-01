@@ -19,6 +19,7 @@
 - Ăn khoai lắc phomai
 - Thích vòng
 - Xem phim 
+- Làm đẹp
 - Thích ăn nho, bơ, thanh long...
 
 ## Quán ăn ưa thích
