@@ -35,6 +35,7 @@
 ## Địa điểm cần trải nghiệm
 
 ## Các mốc quan trọng
+- [ ] Chủ nhật, 04/10/2026: Em Bé lên Hà Nội
 - [ ] Sinh nhật 22/10
 - [ ] Kỷ niệm 1 năm yêu nhau: ngày
 - [ ] Kỷ niệm ngày đầu gặp nhau: ngày
