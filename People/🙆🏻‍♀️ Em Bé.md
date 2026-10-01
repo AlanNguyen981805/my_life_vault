@@ -36,6 +36,7 @@
 
 ## Các mốc quan trọng
 - [ ] Chủ nhật, 04/10/2026: Em Bé lên Hà Nội
+- [ ] Sáng thứ Hai, 05/10/2026: Đưa Em Bé đi làm
 - [ ] Sinh nhật 22/10
 - [ ] Kỷ niệm 1 năm yêu nhau: ngày
 - [ ] Kỷ niệm ngày đầu gặp nhau: ngày
